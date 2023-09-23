@@ -6,10 +6,15 @@
 // }
 
 function tampil() {
-    //QuerySelector
-    document.querySelector('h1').textContent='Belajar JavaScript';
-    document.querySelector('.container').style.backgroundColor="red";
-    document.querySelector('.container').style.color="white";
-    document.querySelector('#p1').textContent='Belajar JavaScript untuk membuat web kita menjadi lebih interaktif';
-    document.querySelector('#p1').style.fontStyle='italic';
+    //memeriksa array img
+    // console.log(document.querySelectorAll('img')); //fungsi querySelctorAll adalah untuk menunjuk semua elemen img yang sama dimana nanti akan membentuk sebuah array sesuai urutan elemen img tersebut di html
+
+    //membuat random untuk index
+    min = Math.ceil(0);
+    max = Math.floor(2);
+
+    let n = Math.floor(Math.random()* (max - min +1));
+    console.log(n);
+    document.querySelectorAll('img')[n].style.visibility='visible';
+
 }
