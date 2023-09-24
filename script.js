@@ -34,7 +34,15 @@ function tampil() {
 //     alert('this is mouseover event');
 // });
 
-btn.onclick = ()=> {
-    let menu = document.querySelector('ul');
-    menu.removeChild(menu.children[0]);
+// btn.onclick = ()=> {
+//     let menu = document.querySelector('ul');
+//     menu.removeChild(menu.children[0]);
+// }
+
+btn.onclick = ()=>{
+    const nama = document.querySelector('#inputNama').value;
+    const judul = document.querySelector('h1');
+
+    let tampil = `Belajar`;
+    judul.innerHTML= `${tampil} ${nama}`;
 }
