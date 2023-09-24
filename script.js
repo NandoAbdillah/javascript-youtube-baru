@@ -22,7 +22,14 @@
 function tampil() {
     alert( 'Nama Anda : ' +
     document.querySelector('#inputNama').value
-    )
+    );
     document.querySelector('#tempelNama').value= document.querySelector('#inputNama').value;
     document.querySelector('#para').textContent= document.querySelector('#inputNama').value;
 }
+
+// btn.onclick = tampil;
+// btn.onclick = ()=> alert('JavaScript');
+// btn.addEventListener('mouseover',tampil);
+btn.addEventListener('mouseover', ()=>{
+    alert('this is mouseover event');
+});
