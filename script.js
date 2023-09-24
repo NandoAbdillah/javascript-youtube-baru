@@ -30,6 +30,11 @@ function tampil() {
 // btn.onclick = tampil;
 // btn.onclick = ()=> alert('JavaScript');
 // btn.addEventListener('mouseover',tampil);
-btn.addEventListener('mouseover', ()=>{
-    alert('this is mouseover event');
-});
+// btn.addEventListener('mouseover', ()=>{
+//     alert('this is mouseover event');
+// });
+
+btn.onclick = ()=> {
+    let menu = document.querySelector('ul');
+    menu.removeChild(menu.children[0]);
+}
