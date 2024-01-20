@@ -39,10 +39,25 @@ function tampil() {
 //     menu.removeChild(menu.children[0]);
 // }
 
-btn.onclick = ()=>{
-    const nama = document.querySelector('#inputNama').value;
-    const judul = document.querySelector('h1');
+// btn.onclick = ()=>{
+//     const nama = document.querySelector('#inputNama').value;
+//     const judul = document.querySelector('h1');
 
-    let tampil = `Belajar`;
-    judul.innerHTML= `${tampil} ${nama}`;
+//     let tampil = `Belajar`;
+//     judul.innerHTML= `${tampil} ${nama}`;
+// }
+
+btn.onclick =()=> {
+    let a = 4;
+    let b = 2;
+
+    b = b + a;
+    b = b - a;
+    b = b * a;
+    b = b ** a;
+    b = b / a;
+    b = a % b;
+    b = b--;
+
+    console.log(b);
 }
